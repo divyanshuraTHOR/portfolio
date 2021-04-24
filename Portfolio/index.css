@@ -1,0 +1,68 @@
+body
+{
+  background-color: grey;
+}
+
+h1 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 26.8px;
+  color: rgba(255,255,255,.70);
+  margin-left: 24%;
+  margin-top: 11%;
+}
+
+/* Animation */
+h1 {
+  animation: animated-text 4s steps(29,end) 0s 1 normal ,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+/* text animation */
+
+@keyframes animated-text {
+  from{width: 0; border-right-color: transparent;}
+  to{width: 472px; border-right-color: transparent;}
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-right-color: white;}
+  to{border-right-color: transparent;}
+}
+
+
+h2 {
+  border-right: solid 3px rgba(0,255,0,.75);
+  white-space: nowrap;
+  overflow: hidden;    
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 24.3px;
+  color: rgba(255,255,255,.70);
+  margin-left: 24%;
+  margin-top: 5%;
+}
+
+/* Animation */
+h2 {
+  animation: animated-text_h2 4s steps(29,end) 1s 1 normal both,
+             animated-cursor_h2 600ms steps(29,end) 7;
+
+  animation-delay: 7s;
+}
+@keyframes animated-text_h2 {
+  from{width: 0; border-right-color: transparent;}
+  to{width: 469px;border-right-color: transparent;}
+
+}
+
+/* cursor animations */
+
+@keyframes animated-cursor_h2{
+  from{border-right-color: white;}
+  to{border-right-color: transparent;}
+
+}
